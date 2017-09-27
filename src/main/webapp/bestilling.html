@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>leBistro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="restJs.js"></script>
+        <script src="http://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+        <script src="menyJs.js"></script>
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        
+        <div class ="form-group" id="Forett">
+            <label class="col-sm-1">Navn:</label>
+            <input id="navn"><br>
+            <label class="col-sm-1">Kortnummer:</label>
+            <input type="number" id="kort"><br>
+            <label class="col-sm-1">Utløpsdato</label>
+            <input id="uDato"><br>
+            <label class="col-sm-1">Kontrollsiffer:</label>
+            <input type="number" id="kSiffer"><br>
+            <label class="col-sm-1">Antall personer</label>
+            <input id="aPersoner"><br>
+
+            <table class="table" style="width:600px" id="tTable">
+                <tr><th style="width:100px">Type</th><th style="width:100px">Retter</th><th>antall</th></tr>
+            </table>
+            <label class="col-sm-1" for="vDato">Velg Tidspunkt:</label>
+            <div class="col-sm-3">
+                <select class="form-control" id="vDato">                    
+                </select>
+            </div>
+        </div>
+        
+        <button id="myButton">Bestill</button>
+        <br><br><br>
+        <script src="bootstrap.min.js"></script>
+    </body>
+</html>
+

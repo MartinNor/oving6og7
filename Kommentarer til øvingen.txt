@@ -1,0 +1,15 @@
+1)
+per nå så hentes alle tidspunkt med ledige bord, uten å sjekke om det er ledig fram i tid.
+2)
+kortinformasjon blir bare lagret i objektet, sjekker ikke om korrekt format eller gyldige verdier. kunne laget en boolean
+eller noe som indikerer om det er fylt ut kortinformasjon riktig.
+3)
+I datatablen med bestillinger listes alle typer retter (hovedrett, dessert, forett) med "," i starten, tror det ligger i att 
+String array lagres med "," mellom verdiene, og JSON leser "," som en del av stringen.
+4)
+Ligger heller ikke inn noen form for sjekk i forhold til hvor mange personer som er på bestillingen.
+5)
+da det er "proof-of-concept" så er det ikke mulighet for utvidelse av antall bord, åpningstid eller meny. i fullstendig
+booking løsning så bør dette være med.
+6)
+Per nå så oppdateres ikke ordre tabellen automatisk, så siden må refreshes for oppdatering.
